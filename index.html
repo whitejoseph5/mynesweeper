@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Mynesweeper</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="mynesweeper.js"></script>
+    <link rel="stylesheet" href="mynesweeper.css">
+</head>
+<body onload="Mynesweeper.refresh();" oncontextmenu="return false;">
+
+    <div id="gameContainer">
+        <header><h3>MYnesweeper</h3></header>
+
+        <button id="newGame" class="btn btn-primary refresh userInput" type="button">
+            New Game
+        </button>
+
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle userInput" type="button" data-toggle="dropdown">
+                Difficulty
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="refresh" id="easy">EASY</a></li>
+                <li><a href="#" class="refresh" id="medium">MEDIUM</a></li>
+                <li><a href="#" class="refresh" id="hard">HARD</a></li>
+            </ul>
+        </div>
+
+        <table id="grid"></table>
+        <h3 hidden="hidden" id="winMsg">YOU WIN :)</h3>
+        <h3 hidden="hidden" id="loseMsg">YOU LOSE :(</h3>
+    </div>
+</body>
+</html>

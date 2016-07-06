@@ -1,0 +1,51 @@
+/* theme related colors */
+#gameContainer {
+  margin: 20px;
+  padding: 10px;
+  background-color: #255B6D;
+  display: inline-block;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#gameContainer > header,
+#gameContainer > button,
+#gameContainer > .dropdown > button,
+#gameContainer > h3 {
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+header {
+  font-style: italic;
+  color: #bdc7c8;
+}
+table {
+  background-color: lightgray;
+}
+.glyphicon-fire {
+  color: orange;
+}
+button.userInput {
+  margin-bottom: 5px;
+  background-color: #072e3c;
+}
+.cell {
+  width: 20px;
+  height: 25px;
+  border-width: 1px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+td {
+  width: 26px;
+  height: 25px;
+}
+div.dropdown {
+  display: inline-block;
+}
+#winMsg {
+  color: green;
+}
+#loseMsg {
+  color: #FFB7B3;
+}

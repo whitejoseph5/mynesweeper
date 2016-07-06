@@ -1,0 +1,68 @@
+
+/* theme related colors */
+@backgroundColor: #255B6D;
+@mineBackgroundColor: lightgray;
+@headerColor: #bdc7c8;
+@buttonColor: #072e3c;
+@loseColor: #FFB7B3;
+@winColor: green;
+
+.roundedBorders(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+#gameContainer {
+    margin: 20px;
+    padding: 10px;
+    background-color: @backgroundColor;
+    display: inline-block;
+    .roundedBorders(10px);
+}
+
+#gameContainer > header, #gameContainer > button, #gameContainer > .dropdown > button, #gameContainer > h3 {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+header {
+    font-style: italic;
+    color: @headerColor;
+}
+
+table {
+    background-color: @mineBackgroundColor;
+}
+
+.glyphicon-fire {
+    color: orange;
+}
+
+button.userInput {
+    margin-bottom: 5px;
+    background-color: @buttonColor;
+}
+
+.cell {
+    width: 20px;
+    height: 25px;
+    border-width: 1px;
+    .roundedBorders(0px);
+}
+
+td {
+    width: 26px;
+    height: 25px;
+}
+
+div.dropdown {
+    display: inline-block;
+}
+
+#winMsg {
+    color: @winColor;
+}
+
+#loseMsg {
+    color: @loseColor;
+}
