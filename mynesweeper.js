@@ -161,9 +161,10 @@ Mynesweeper.Grid.prototype.start = function () {
                 if (e.which == 1) { // left click
                     if (_this.cells[row][col].flag != Mynesweeper.Flag.MINE) {
 
-                        $("#" + this.id).fadeOut(3000);
+                        //$("#" + this.id).fadeOut(3000);
+                        $("#" + this.id).hide();
                         _this.numCellsLeft--;
-                        console.log("left: " + _this.numCellsLeft + "  bombs: " + _this.myDifficulty.numBombs);
+                        //console.log("left: " + _this.numCellsLeft + "  bombs: " + _this.myDifficulty.numBombs);
                         
                         if (_this.cells[row][col].isBomb) {
                             _this.revealAllBombs(_this);
